@@ -4,11 +4,20 @@ import java.io.PrintStream;
 
 import domain.Cell;
 
+/**
+ * Describe console cell
+ * @author Igor Lipko
+ * @since 17.01.2018
+ */
 public class ConsoleCell implements Cell<PrintStream> {
     private boolean bomb;
     private boolean suggestBomb = false;
     private boolean suggestEmpty = false;
-    
+
+    /**
+     * Constructor with parameter. Creates a cell with or without bomb.
+     * @param bomb presence
+     */
     public ConsoleCell(boolean bomb) {
         this.bomb = bomb;
     }

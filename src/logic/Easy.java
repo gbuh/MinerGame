@@ -3,6 +3,11 @@ package logic;
 import domain.Cell;
 import domain.SuperLogic;
 
+/**
+ * Describe easy logic type
+ * @author Igor Lipko
+ * @since 17.01.2018
+ */
 public class Easy implements SuperLogic {
     private Cell [][] cells;
 

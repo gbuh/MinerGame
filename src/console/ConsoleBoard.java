@@ -3,6 +3,11 @@ package console;
 import domain.Board;
 import domain.Cell;
 
+/**
+ * Describe console board
+ * @author Igor Lipko
+ * @since 17.01.2018
+ */
 public class ConsoleBoard implements Board {
     private Cell[][] cells;
 
@@ -29,6 +34,10 @@ public class ConsoleBoard implements Board {
         System.out.println("****CONGRATULATE****");
     }
 
+    /**
+     * Redraw cell after action
+     * @param real board or user choice cell
+     */
     private void redraw(boolean real) {
         for(Cell[] row : cells) {
             for(Cell cell : row) {

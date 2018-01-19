@@ -7,6 +7,11 @@ import domain.Cell;
 import domain.GeneratorBoard;
 import logic.Easy;
 
+/**
+ * This program imitates the easy type game process
+ * @author Igor Lipko
+ * @since 17.01.2018
+ */
 public class BaseActionTest {
 
     public static void main(String[] args) {
@@ -20,13 +25,13 @@ public class BaseActionTest {
                 };
             }
         });
-        // success
+        // success result
         action.initGame();
         action.select(0, 0, true);
         action.select(1, 0, true);
         action.select(0, 1, false);
         action.select(1, 1, false);
-        // failure
+        // failure result
         action.initGame();
         action.select(0, 0, true);
         action.select(1, 0, false);
